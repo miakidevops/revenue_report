@@ -1,0 +1,13 @@
+C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\xampp\php;C:\Users\Sohel Akter\composer;C:\Users\Sohel Akter\AppData\Roaming\Composer\vendor\bin;C:\Users\Sohel Akter\AppData\Local\Programs\Git\cmd;C:\Users\Sohel Akter\AppData\Local\Microsoft\WindowsApps;
+
+
+
+C:\Users\Sohel Akter>setx path "C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\xampp\php;C:\Users\Sohel Akter\composer;C:\Users\Sohel Akter\AppData\Roaming\Composer\vendor\bin;C:\Users\Sohel Akter\AppData\Local\Programs\Git\cmd;C:\Users\Sohel Akter\AppData\Local\Microsoft\WindowsApps;"
+
+
+
+
+setx path "C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\xampp\php;C:\Users\Sohel Akter\composer;C:\Users\Sohel Akter\AppData\Roaming\Composer\vendor\bin;C:\Users\Sohel Akter\AppData\Local\Programs\Git\cmd;C:\Users\Sohel Akter\AppData\Local\Microsoft\WindowsApps;"
+
+
+setx path "C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\xampp\php;C:\Users\Sohel Akter\composer;C:\Users\Sohel Akter\AppData\Roaming\Composer\vendor\bin;C:\Users\Sohel Akter\AppData\Local\Programs\Git\cmd;C:\Users\Sohel Akter\AppData\Local\Microsoft\WindowsApps;"

@@ -1,0 +1,684 @@
+/*body{
+	background:#ebebe0;
+}*/
+body{
+  background-image: url("../image/bg-img.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size:cover;
+  /*min-height: 93vh;*/
+  padding-bottom: 90px;
+}
+
+.footer-image{
+  position: fixed; 
+  bottom:0px; 
+  margin-left: -15px; 
+  margin-right: -15px;
+}
+
+.login-card{
+	padding: 30px;
+    margin-top: 20px;
+}
+
+h4.first-heading{
+	background: #e61b23;
+	padding: 6px;
+	color:white;
+}
+
+
+
+table th,td{
+	font-size: 12px;
+}
+
+.note{
+	font-size: 12px;
+	color: white;
+}
+
+.edit,.delete{
+	font-size: 10px;
+}
+
+/*.messsage{
+	margin-top: 22px;
+	font-weight:bold;
+	background: linen;
+	color:#850e0e;
+}*/
+
+th.date{
+	width:11%;
+}
+
+.pagination {
+    
+    margin: 5px 0;
+
+   
+}
+
+.search-button{
+	margin-left: -48%;
+}
+
+.nav-btn1,.nav-btn2,.nav-btn3{
+	width:68px;
+}
+
+.nav-btn2{
+  margin-left:-9px;
+}
+
+.nav-btn3{
+  margin-left:-19px;
+}
+
+thead{
+	background: #e0e0d1;
+}
+
+tfoot{
+	background: #e0e0d1;
+}
+
+tbody{
+	background: #f9ffe6;
+}
+
+.content-link:hover{
+	text-decoration: none;
+	color: #c61e1e;
+}
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::;
+::::::::::::::::::home page table start here::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.Shortcode_Wise_Revenue table thead tr,.service_type_rev table thead tr{
+  background: #148614;
+  color:white;
+}
+.Shortcode_Wise_Revenue table th, .Shortcode_Wise_Revenue table td{
+  padding: 10px !important;
+}
+
+/*......................................................
+.....................end of it........................
+......................................................*/
+
+
+div.scroll {
+    height: 360px;
+    width:100%;
+    position: absolute;
+    overflow: scroll;
+    
+}
+
+.result2>.view-card{
+  margin-bottom: 20px;
+  height: 54%;
+}
+
+.scroll>.table>th,td{
+	font-size: 11px;
+	
+}
+
+.time{
+	width:9%;
+}
+
+
+.search_grp{
+	font-size: 11px;
+}
+
+
+.btn-gp{
+	margin-top: 11px;
+}
+
+.btn-gp>a>button{
+	width:80%;
+}
+
+.first-heading_link{
+	text-decoration: none;
+}
+
+.p-color{
+    color: #660000;
+}
+
+.btn-font{
+	font-size: 10px;
+    padding: 5px;
+
+}
+
+
+.table-1,.table-2{
+	margin-bottom: 0px;
+}
+
+
+
+.res-table-1,.res-table-2{
+	width:101%;
+}
+
+
+.serial{
+	width:6%;
+}
+
+.time{
+	width:10%;
+}
+
+.shortcode{
+	width:10%;
+}
+
+.keyword{
+	width:12%;
+}
+.service_name{
+	width:15%;
+}
+
+.service_type{
+	width:10%;
+}
+
+.total_revenue{
+	width:11%;
+}
+
+.vat{
+	width:10%;
+}
+
+.miaki_revenue{
+	width:10%;
+}
+
+.nav-button{
+	margin-top:10px;
+}
+
+.right-bar{
+	margin-left: -29px;
+}
+
+.left-bar{
+	margin-left: 12px;
+}
+
+.left-bar2{
+	margin-left: 51%;
+}
+
+.first-heading_link:hover{
+	text-decoration: none;
+	color:#f2f2f2;
+	
+}
+
+abbr{
+	text-decoration: none!important;
+}
+
+.summary{
+	color:white;
+	background:#e61b23;
+	padding:8px;
+	font-weight:bold;
+	font-size: 20px;
+	
+	margin-bottom:40px;
+}
+
+.month{
+	color:black;
+	margin-bottom:15px;
+	
+	text-decoration:underline;
+	padding:2px;
+}
+
+
+input[type=search] {
+    width: 65%;
+    padding: 3px 4px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#example_filter label{
+	font-size: 12px;
+	margin-right:30px;
+}
+
+.display{
+	border-bottom: none !important;
+	border-top:none;
+}
+
+/*convas js*/
+.canvasjs-chart-credit{
+	display: none;
+}
+
+.short-ul{
+	list-style-type: none;
+}
+.short-ul li {
+    float: left;
+}
+
+.btnns-grp{
+	margin-left: -14px;
+    margin-bottom: 14px;
+}
+
+.bdapps_heading{
+	  /*background: linear-gradient(to right, #ff3333 17%, #c20000 95%);*/
+    background-image: url("../image/bar.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    background-size:cover;
+    padding: 10px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.bdapps_table thead .dark
+{
+    background: #009432;
+    color: white;
+}
+
+.bdapps_table thead .light
+{
+    background: #28a745;
+    color: white;
+}
+
+.bdapps_table thead tr th
+{
+    padding:15px;
+}
+
+.navbar {
+    margin-bottom: 0px !important;
+    background-image: url("../image/menu_bar.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    background-size:cover;
+    border: none;
+    border-radius: 0px;
+}
+.navbar a{
+  color:white!important;
+}
+
+.navbar a:hover{
+  color:black!important;
+  background: white!important;
+}
+
+.dropdown-menu li a{
+  background-image: linear-gradient(to right top, #81bbe6, #669cd1, #527dbb, #455ea3, #3e3f88);
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.input-group-addon{
+  background: none !important;
+  border:none !important;
+  padding:1px ;
+}
+
+ .form-cnt{
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 0 0 9px 9px;
+}
+
+.form-cnt input[type=email],.form-cnt input[type=password]{
+    width: 95%;
+    float: right;
+    background: #e1e1e1;
+    /*color: #e1e1e1;*/
+    border-bottom-left-radius: 5%;
+    border:solid 1px #cccccc;
+    /*border-radius: 10px;*/
+}
+
+.form-cnt .btn-block{
+    width: 50% !important;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #297ffe 10%, #004ce0 100%);
+}
+
+.cnt-wrap .alert{
+    padding: 6px;
+    font-size: 12px;
+}
+
+
+.regular_vas_churn ul li.active a{
+  background: #4caf50 !important;
+  color: white !important;
+  font-weight: bold ;
+  font-size: 13px;
+}
+
+.regular_vas_churn ul li.inactive a{
+  background: #e61212 !important;
+  color: white !important;
+  /*font-weight: bold ;*/
+  font-size: 12px;
+}
+
+.regular_vas_churn ul.nav-tabs{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.regular_vas_churn #data_table_1_filter{
+  display: none !important;
+}
+
+.regular_vas_churn thead,.regular_vas_churn tfoot{
+  background: #337ab7;
+  color: white;
+}
+.regular_vas_churn .table{
+  margin-bottom: 0px;
+}
+
+.regular_vas_churn input[type=date],.regular_vas_churn .submit_btn{
+  font-size: 13px ;
+}
+
+.date_picker_title{
+    padding-top: 5px;
+}
+.date_picker_title span{
+    color: #4e4ee6;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.bdapps_heading span{
+  font-size: 16px;
+  font-style: italic;
+  color:black;
+}
+
+#myBtnTop {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 25px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+
+  transition: all .1s ease .1s;
+  scroll-behavior: smooth;
+}
+
+#myBtnTop:hover {
+  background-color: green;
+}
+
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::;
+::::::::::::::::::::::::: miaki_rev_div :::::::::::::::::::::::::::
+::::::::::::::::::::::::     panel div style     ::::::::::::::::::::*/
+.miaki_rev_div table{
+  margin-bottom: 0px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.miaki_rev_div th {
+  border: 1px solid black;
+}
+.miaki_rev_div td {
+  font-size: 11px;
+  /*font-weight: bold;*/
+  border: 1px solid black;
+  padding: 6px !important;
+}
+.miaki_rev_div th{
+  padding: 4px !important;
+}
+.miaki_rev_div .panel-body{
+  padding: 0px;
+}
+.miaki_rev_div .panel-heading{
+   padding: 4px 15px;
+}
+   
+
+.miaki_rev_div .daily_status_div .panel-heading{
+  background: #3a4f99;
+  color:white;
+}
+.miaki_rev_div .daily_status_div .panel-body tbody{
+  background: #b8c0dd;
+}
+
+
+.miaki_rev_div .monthly_status_div .panel-heading{
+  background: #0e85af;
+  color: white;
+}
+.miaki_rev_div .monthly_status_div .panel-body tbody{
+  background: #aad5e0;
+}
+.miaki_rev_div .monthly_status_div .panel-body tr td{
+  color: black;
+}
+
+
+.miaki_rev_div .yearly_status_div .panel-heading{
+  background: #46599c;
+  color:white;
+}
+.miaki_rev_div .yearly_status_div .panel-body tbody{
+  background: #a4b2d8;
+}
+.miaki_rev_div .yearly_status_div .panel-body tr td{
+  color:black;
+}
+
+
+.miaki_rev_div .account_status_div .panel-heading{
+  background: #6d52aa;
+  color:white;
+}
+.miaki_rev_div .account_status_div .panel-body tbody{
+  background: #c4b9db;
+}
+.miaki_rev_div .account_status_div .panel-body tr td{
+  color:black;
+}
+
+
+.miaki_rev_div .yesterday_status_div .panel-heading{
+  background: #4052b6;
+  color:white;
+}
+.miaki_rev_div .yesterday_status_div .panel-body tr th{
+  background: #acb9ca;
+}
+.miaki_rev_div .yesterday_status_div .panel-body tr td{
+  background: #dce6f1;
+}
+
+
+.miaki_rev_div .last_month_status_div .panel-heading{
+  background: #3f418b;
+  color:white;
+}
+.miaki_rev_div .last_month_status_div .panel-body tr th{
+  background: #a7acea;
+}
+.miaki_rev_div .last_month_status_div .panel-body tr td{
+  background: #dce6f1;
+}
+
+
+.miaki_rev_div .comparison_status_div .panel-heading{
+  background: #3e359c;
+  color:white;
+}
+.miaki_rev_div .comparison_status_div .panel-body tr th{
+  background: #babace;
+}
+.miaki_rev_div .comparison_status_div .panel-body tr td{
+  background: #dce6f1;
+}
+
+/*:::::::::::::::::::::::::::;  end of it :::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.miaki_apps_detail_revenue table{
+  /*margin-top: 20px;*/
+}
+
+.miaki_apps_detail_revenue table thead tr{
+  background:#409d60;
+  color:white;
+}
+
+.miaki_apps_detail_revenue td{
+  vertical-align: middle !important;
+}
+.miaki_apps_detail_revenue .code0{
+  vertical-align: middle;
+}
+
+.miaki_apps_detail_revenue .code1{
+  background:#bbff99;
+  vertical-align: middle;
+}
+
+.miaki_apps_detail_revenue .code-1{
+  background:#ffb3b3;
+  vertical-align: middle;
+}
+
+.miaki_apps_detail_revenue tr th, .miaki_apps_detail_revenue tr td{
+  white-space: nowrap;
+  /*width:200px;*/
+  height: 30px;
+  vertical-align: middle;
+  padding-left:20px;
+  padding-right:20px;
+  min-width:100px;
+  vertical-align: middle;
+
+  border-left: 1px solid #c41919 !important;
+  border-right: 1px solid #c41919 !important;
+  border-top: 1px solid #000000 !important;
+  border-bottom: 1px solid #000000 !important;
+}
+
+.miaki_apps_detail_revenue tr .sl{
+  min-width:10px;
+}
+.miaki_apps_detail_revenue label{
+  display: none;
+}
+
+.mobile-table--parent-div {
+  overflow-x: auto;
+}
+.mobile-table--thead {display: block;}
+.mobile-table--tbody {
+  display: block;
+  overflow-y: scroll;
+  height: 70vh;
+}
+.DTFC_LeftBodyLiner {
+overflow-x: hidden;
+}
+
+.financial_review_div .panel-heading{
+  font-size: 13px;
+}
+.financial_review_div input,.financial_review_div button{
+  font-size: 12px;
+}
+
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::;
+::::::::::::::::::::::::: MEDIA QUERY START :::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+@media only screen and (max-width: 600px) {
+ .home-page h3{
+    font-size: 15px;
+ }
+ .home-page .media_query_graph{
+    margin-bottom: 20px;
+ }
+ h4.bdapps_heading{
+    font-size: 14px;
+ }
+
+ #month_wise_revenue_in_current_year{
+    margin-bottom: 20px;
+ }
+
+ .media_query_div{
+    margin-top: 110px;
+ }
+ .daily_status_div .mobile_highlite {
+    font-weight: bold;
+ }
+ .financial_review_div{
+    padding-right: 0px;
+    padding-left: 0px;
+ }
+ .financial_review_div button{
+   margin-top: 10px
+ }
+
+ .financial_review_div tbody{
+   background: #f2f7ff;
+ }
+
+}
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::: END OF MEDIA QUERY ::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
