@@ -564,23 +564,23 @@ class Miaki_apps_revenue_controller extends Controller
                     $bdappsRevenue[$miaki_rev->date]['mmlbd_rev'] = 0;
                     $bdappsRevenue[$miaki_rev->date]['other_rev'] = 0;
 
+                }
+
+                if ($miaki_rev->corporate_user == "Miaki") {
+
+                    $bdappsRevenue[$miaki_rev->date]['miaki_rev'] += $miaki_rev->revenue;
+
+                } elseif ($miaki_rev->corporate_user == "MMLBD") {
+
+                     $bdappsRevenue[$miaki_rev->date]['mmlbd_rev'] += $miaki_rev->revenue;
+                    
                 } else {
 
-                    if ($miaki_rev->corporate_user == "Miaki") {
-
-                        $bdappsRevenue[$miaki_rev->date]['miaki_rev'] += $miaki_rev->revenue;
-
-                    } elseif ($miaki_rev->corporate_user == "MMLBD") {
-
-                         $bdappsRevenue[$miaki_rev->date]['mmlbd_rev'] += $miaki_rev->revenue;
-                        
-                    } else {
-
-                        $bdappsRevenue[$miaki_rev->date]['other_rev'] += $miaki_rev->revenue;
-
-                    }
+                    $bdappsRevenue[$miaki_rev->date]['other_rev'] += $miaki_rev->revenue;
 
                 }
+
+                
                 // ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
