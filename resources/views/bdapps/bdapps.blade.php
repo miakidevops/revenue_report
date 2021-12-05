@@ -306,7 +306,7 @@
           yValueFormatString: "$#,###k",
           xValueType: "dateTime",
           dataPoints: <?php echo json_encode($total_other_array); ?>,
-          lineColor:"#734d26",
+          lineColor:"#c68c53",
         }]
       });
       chart5.render();
