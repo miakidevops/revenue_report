@@ -81,8 +81,8 @@ class BdappsRevenueController extends Controller
             );
 
             $total_other_array[] = array(
-              'x' => strtotime($value->other_rev)*1000,
-              'y' => $value->mmlbd_rev
+              'x' => strtotime($value->rev_date)*1000,
+              'y' => $value->other_rev
             );
 
 
