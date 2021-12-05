@@ -189,7 +189,8 @@ class BdappsRevenueController extends Controller
     $previous_month_revenue = array(); 
     $previous_month_revenue[0] = array( 
        array("y" => $previous_month_rev['rev'][0]->miaki_rev, "label" => "miaki" ),
-       array("y" => $previous_month_rev['rev'][0]->mmlbd_rev, "label" => "mmlbd" )
+       array("y" => $previous_month_rev['rev'][0]->mmlbd_rev, "label" => "mmlbd" ),
+       array("y" => $previous_month_rev['rev'][0]->other_rev, "label" => "other" )
     );
 
     $previous_month_revenue[1] = $previous_month_rev['month'] ;
@@ -309,7 +310,7 @@ class BdappsRevenueController extends Controller
           // dd($lastmonth2_last_day,'-', $lastmonth1_last_day);
          $month_name = date("M", strtotime($lastmonth1_last_day));
           
-         $sql="SELECT  sum(`miaki_rev`) as miaki_rev, sum(`mmlbd_rev`) as mmlbd_rev FROM `bdapps_revenue` where `rev_date` > '".$lastmonth2_last_day."' and `rev_date` <= '".$lastmonth1_last_day."' ";
+         $sql="SELECT  sum(`miaki_rev`) as miaki_rev, sum(`mmlbd_rev`) as mmlbd_rev, sum(`other_rev`) as other_rev FROM `bdapps_revenue` where `rev_date` > '".$lastmonth2_last_day."' and `rev_date` <= '".$lastmonth1_last_day."' ";
 
          $company_wise_rev = DB::select(DB::raw($sql));
 

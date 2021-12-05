@@ -394,7 +394,7 @@
       },
       subtitles:[
           {
-            text: <?php echo json_encode( 'Prev Month Rev: '.number_format($previous_month_revenue[0][0]['y']+$previous_month_revenue[0][1]['y'],2,'.',',').' Tk', JSON_NUMERIC_CHECK); ?>,
+            text: <?php echo json_encode( 'Prev Month Rev: '.number_format($previous_month_revenue[0][0]['y']+$previous_month_revenue[0][1]['y']+$previous_month_revenue[0][2]['y'],2,'.',',').' Tk', JSON_NUMERIC_CHECK); ?>,
             //Uncomment properties below to see how they behave
             fontColor: "#66ff66",
             fontSize:16
