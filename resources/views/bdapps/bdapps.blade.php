@@ -361,7 +361,7 @@
       },
       subtitles:[
           {
-            text: <?php echo json_encode( number_format($current_month_forecast_revenue[0]['y']+$current_month_forecast_revenue[1]['y'],2,'.',',').' Tk', JSON_NUMERIC_CHECK); ?>,
+            text: <?php echo json_encode( number_format($current_month_forecast_revenue[0]['y']+$current_month_forecast_revenue[1]['y']+$current_month_forecast_revenue[2]['y'],2,'.',',').' Tk', JSON_NUMERIC_CHECK); ?>,
             //Uncomment properties below to see how they behave
             fontColor: "#ccffe6",
             fontSize:16

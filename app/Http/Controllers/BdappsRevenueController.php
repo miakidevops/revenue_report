@@ -172,7 +172,8 @@ class BdappsRevenueController extends Controller
     $avg_rev = $forecast_revenue['avgrev'];
     $current_month_forecast_revenue = array( 
        array("y" => $forecast_revenue['miaki'], "label" => "miaki" ),
-       array("y" => $forecast_revenue['mmlbd'], "label" => "mmlbd" )
+       array("y" => $forecast_revenue['mmlbd'], "label" => "mmlbd" ),
+       array("y" => $forecast_revenue['other'], "label" => "other" )
     );
 
     // :::::::::::::::::::::::::: end of it ::::::::::::::::::::::::::::::
