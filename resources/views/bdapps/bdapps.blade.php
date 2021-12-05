@@ -238,7 +238,7 @@
         backgroundColor:"#194e62",
         theme: "dark2",
         title: {
-          text: "Miaki, Mmlbd and Total Revenue",
+          text: "Miaki, Mmlbd, Other and Total Revenue",
           fontSize:18
         },
         axisX: {
@@ -295,6 +295,18 @@
           xValueType: "dateTime",
           dataPoints: <?php echo json_encode($total_mmlbd_array); ?>,
           lineColor:"#ffb3ff",
+        },
+        {
+          type: "line",
+          axisYType: "secondary",
+          name: "Other",
+          showInLegend: true,
+          markerSize: 11,
+          lineThickness: 3,
+          yValueFormatString: "$#,###k",
+          xValueType: "dateTime",
+          dataPoints: <?php echo json_encode($total_other_array); ?>,
+          lineColor:"#734d26",
         }]
       });
       chart5.render();
