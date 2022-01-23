@@ -887,10 +887,10 @@ class Miaki_apps_revenue_controller extends Controller
              $ind++;
         }
 
-        dd($month_wise_3_type_rev);
+        // dd($month_wise_3_type_rev);
 
 
-        return view('miaki_apps_rev.financial_review',compact('search', 'month_name', 'month_wise_all_revenue'));
+        return view('miaki_apps_rev.financial_review',compact('search', 'month_name', 'month_wise_all_revenue', 'month_wise_3_type_rev'));
     }
 
 

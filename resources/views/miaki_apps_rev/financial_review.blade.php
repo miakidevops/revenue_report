@@ -65,35 +65,24 @@
                         </tr>
                       </thead>
                       <tbody>
-                        @php
-                          $sum_tot_miaki_rev = 0;
-                          $sum_tot_mmlbd_rev = 0;
-                          $sum_tot_other_rev = 0;
-                        @endphp
-
-                        @foreach ($month_wise_all_revenue as $rev_obj)
+                        @foreach ($month_wise_all_revenue as $rev_arr)                       
                         <tr>
-                          @php
-                            $sum_tot_miaki_rev += $rev_obj->tot_miaki_rev;
-                            $sum_tot_mmlbd_rev += $rev_obj->tot_mmlbd_rev;
-                            $sum_tot_other_rev += $rev_obj->tot_other_rev;
-                          @endphp
-                          <td >{{ $rev_obj->year }}</td>
-                          <td class="text-right">{{ $month_name[$rev_obj->month] }}</td>
-                          <td class="text-right">{{ number_format($rev_obj->tot_miaki_rev) }}</td>
-                          <td class="text-right">{{ number_format($rev_obj->tot_mmlbd_rev) }}</td>
-                          <td class="text-right">{{ number_format($rev_obj->tot_other_rev) }}</td>
-                          <td class="text-right">{{ number_format($rev_obj->tot_miaki_rev + $rev_obj->tot_mmlbd_rev + $rev_obj->tot_other_rev) }}</td>
+                          <td >{{ $rev_arr['year'] }}</td>
+                          <td class="text-right">{{ $month_name[$rev_arr['month']] }}</td>
+                          <td class="text-right">{{ number_format($rev_arr['miaki_rev']) }}</td>
+                          <td class="text-right">{{ number_format($rev_arr['mmlbd_rev']) }}</td>
+                          <td class="text-right">{{ number_format($rev_arr['other_rev']) }}</td>
+                          <td class="text-right">{{ number_format($rev_arr['miaki_rev'] + $rev_arr['mmlbd_rev'] + $rev_arr['other_rev']) }}</td>
                         </tr>
                         @endforeach
 
                         <tr>
                           <th class="text-right">-</th>
                           <th class="text-right">Total Sum:</th>
-                          <th class="text-right">{{ number_format($sum_tot_miaki_rev) }}</th>
-                          <th class="text-right">{{ number_format($sum_tot_mmlbd_rev) }}</th>
-                          <th class="text-right">{{ number_format($sum_tot_other_rev) }}</th>
-                          <th class="text-right">{{ number_format( $sum_tot_miaki_rev + $sum_tot_mmlbd_rev + $sum_tot_other_rev ) }}</th>
+                          <th class="text-right">{{ number_format($month_wise_3_type_rev['miaki_rev']) }}</th>
+                          <th class="text-right">{{ number_format($month_wise_3_type_rev['mmlbd_rev']) }}</th>
+                          <th class="text-right">{{ number_format($month_wise_3_type_rev['other_rev']) }}</th>
+                          <th class="text-right">{{ number_format( $month_wise_3_type_rev['miaki_rev'] + $month_wise_3_type_rev['mmlbd_rev'] + $month_wise_3_type_rev['other_rev'] ) }}</th>
                         </tr>
                       </tbody>
                     </table>
