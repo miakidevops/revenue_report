@@ -858,14 +858,21 @@ class Miaki_apps_revenue_controller extends Controller
         }
 
 
+        $mia_tot_rev = $duration_wise_arr['miaki_rev'];
+        $mia_btrc = round( $mia_tot_rev * (6.5/100) );
+        $mia_subtot = round( $mia_tot_rev - $mia_btrc );
+        $mia_gross = $mia_subtot / 2;
+        $mia_vat = round( $mia_gross * (5/100) ); 
+        $mia_net = round( $mia_gross - $mia_vat );
+
         $duration_wise = [
             "miaki" => [
-                "tot_rev" => $duration_wise_arr['miaki_rev'],
-                "btrc" => round( $duration_wise_arr['miaki_rev'] * (6.5/100) ),
-                "subtotal" => round( $duration_wise_arr['miaki_rev'] - ($duration_wise_arr['miaki_rev'] * (6.5/100)) ),
-                "gross" => $duration_wise["miaki"]["subtotal"] / 2,
-                "vat" => round( $duration_wise["miaki"]["gross"] * (5/100) ),
-                "net" => round( $duration_wise["miaki"]["gross"] - $duration_wise["miaki"]["vat"] ),
+                "tot_rev" => $mia_tot_rev,
+                "btrc" => $mia_btrc,
+                "subtotal" => $mia_subtot,
+                "gross" => $mia_gross,
+                "vat" => $mia_vat,
+                "net" => $mia_net,
                 "ait" => 0,
                 "rebate" => 0
             ]
