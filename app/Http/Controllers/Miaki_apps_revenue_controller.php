@@ -837,6 +837,31 @@ class Miaki_apps_revenue_controller extends Controller
         }
 
 
+
+        $duration_wise_obj = BdappsRevenue::select( DB::raw('sum(miaki_rev) as miaki_rev'),
+                                            DB::raw('sum(mmlbd_rev) as mmlbd_rev'),
+                                            DB::raw('sum(other_rev) as other_rev')) 
+                                      ->where('rev_date','>=',$search['start'])
+                                      ->where('rev_date','<=',$search['end']) 
+                                      ->get();
+
+        $duration_wise = [
+            "miaki" = [
+                "tot_rev" => $duration_wise_obj->miaki_rev,
+                "btrc" => round( $duration_wise_obj->miaki_rev * (6.5/100) ),
+                "subtotal" => round( $duration_wise_obj->miaki_rev - ($duration_wise_obj->miaki_rev * (6.5/100)) ),
+                "gross" => $duration_wise["miaki"]["subtotal"] / 2,
+                "vat" => round( $duration_wise["miaki"]["gross"] * (5/100) ),
+                "net" => round( $duration_wise["miaki"]["gross"] - $duration_wise["miaki"]["vat"] ),
+                "ait" => 0,
+                "rebate" => 0
+            ]
+        ];
+
+        dd($duration_wise);
+
+        // ======================================================================
+
         $month_name = array(
             "1" => "January",
             "2" => "February",

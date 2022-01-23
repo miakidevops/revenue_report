@@ -47,8 +47,9 @@
               
               <div class="tab-content">
                 <div id="duration" class="tab-pane fade in active">
-                  <h3>HOME</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <h3>Duration Wise Revenue:</h3>
+                  
+                  
                 </div>
 
                 <div id="month" class="tab-pane fade">
