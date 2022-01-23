@@ -883,6 +883,16 @@ class Miaki_apps_revenue_controller extends Controller
 
 
         $duration_wise = [
+            "all" => [
+                "tot_rev" => $mia_tot_rev + $mml_tot_rev + $otr_tot_rev,
+                "btrc" => $mia_btrc + $mml_btrc + $otr_btrc,
+                "subtotal" => $mia_subtot + $mml_subtot + $otr_subtot,
+                "gross" => $mia_gross + $mml_gross + $otr_gross,
+                "vat" => $mia_vat + $mml_vat + $otr_vat,
+                "net" => $mia_net + $mml_net + $otr_net,
+                "ait" => 0,
+                "rebate" => 0
+            ],
             "miaki" => [
                 "tot_rev" => $mia_tot_rev,
                 "btrc" => $mia_btrc,

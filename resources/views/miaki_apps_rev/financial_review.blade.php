@@ -49,6 +49,52 @@
                 <div id="duration" class="tab-pane fade in active">
                     <h3>Duration Wise Revenue:</h3>
 
+
+                    <h5 style="padding-top: 25px">All</h5>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Title (All)</th>
+                          <th>Total Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Total Reveneu:</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['tot_rev']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)BTRC Reveneu Share(6.5%)</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['btrc']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>Subtotal</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['subtotal']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>Our Gross Revenue (.5)</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['gross']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)VAT (5%)</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['vat']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)AIT (0%)</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['ait']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)Rebate (0)</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['rebate']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>Net Payable to Our Bank Account</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['net']) }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- ------------------------------------------------------ -->
+
                     <h5 style="padding-top: 25px">Miaki</h5>
                     <table class="table table-hover">
                       <thead>
