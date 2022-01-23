@@ -49,9 +49,32 @@
                   <h3>HOME</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
+
                 <div id="month" class="tab-pane fade">
-                  <h3>Menu 1</h3>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h3>Month Wise Revenue:</h3>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Year</th>
+                          <th>Month</th>
+                          <th>Miaki</th>
+                          <th>MMLBD</th>
+                          <th>Other</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @foreach ($month_wise_all_revenue as $rev_obj)
+                        <tr>
+                          <td>{{ $rev_obj->year }}</td>
+                          <td>{{ $month_name[$rev_obj->month] }}</td>
+                          <td>{{ $rev_obj->tot_miaki_rev }}</td>
+                          <td>{{ $rev_obj->tot_mmlbd_rev }}</td>
+                          <td>{{ $rev_obj->tot_other_rev }}</td>
+                          <td>{{ $rev_obj->tot_miaki_rev + $rev_obj->tot_mmlbd_rev + $rev_obj->tot_other_rev }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
                 </div>
               </div>
            

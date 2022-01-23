@@ -837,7 +837,22 @@ class Miaki_apps_revenue_controller extends Controller
         }
 
 
-        $all_revenue = BdappsRevenue::select( DB::raw('sum(miaki_rev) as tot_miaki_rev'),
+        $month_name = array(
+            "01" => "January",
+            "02" => "February",
+            "03" => "March",
+            "04" => "April",
+            "05" => "May",
+            "06" => "June",
+            "07" => "July",
+            "08" => "August",
+            "09" => "September",
+            "10" => "October",
+            "11" => "November",
+            "12" => "December"
+        );
+
+        $month_wise_all_revenue = BdappsRevenue::select( DB::raw('sum(miaki_rev) as tot_miaki_rev'),
                                             DB::raw('sum(mmlbd_rev) as tot_mmlbd_rev'),
                                             DB::raw('sum(other_rev) as tot_other_rev'), 
                                             DB::raw('YEAR(rev_date) year, 
@@ -847,10 +862,8 @@ class Miaki_apps_revenue_controller extends Controller
                                       ->groupby('year','month')
                                       ->get();
 
-        dd($all_revenue);
 
-
-        return view('miaki_apps_rev.financial_review',compact('search'));
+        return view('miaki_apps_rev.financial_review',compact('search', 'month_name', 'month_wise_all_revenue'));
     }
 
     public function financial_review2(Request $request)
