@@ -862,9 +862,10 @@ class Miaki_apps_revenue_controller extends Controller
                                       ->groupby('year','month')
                                       ->get();
 
-        $month_wise_all_revenue = [];
-        foreach ($month_wise_all_revenue as $obj) {
 
+        $month_wise_all_revenue = [];
+
+        foreach ($month_wise_all_revenue_obj as $obj) {
             $month_wise_all_revenue[] = array(
                 "year" => $obj->year,
                 "month" => $obj->month,
