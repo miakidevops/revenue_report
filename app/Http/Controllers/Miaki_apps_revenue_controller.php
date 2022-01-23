@@ -915,7 +915,7 @@ class Miaki_apps_revenue_controller extends Controller
             ]
         ];
 
-        dd($duration_wise);
+        // dd($duration_wise);
 
         // ======================================================================
 
@@ -972,7 +972,7 @@ class Miaki_apps_revenue_controller extends Controller
         // dd($month_wise_3_type_rev);
 
 
-        return view('miaki_apps_rev.financial_review',compact('search', 'month_name', 'month_wise_all_revenue', 'month_wise_3_type_rev'));
+        return view('miaki_apps_rev.financial_review',compact('search', 'duration_wise', 'month_name', 'month_wise_all_revenue', 'month_wise_3_type_rev'));
     }
 
 

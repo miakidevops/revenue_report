@@ -47,9 +47,53 @@
               
               <div class="tab-content">
                 <div id="duration" class="tab-pane fade in active">
-                  <h3>Duration Wise Revenue:</h3>
+                    <h3>Duration Wise Revenue:</h3>
+
+                    <h5>Miaki</h5>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Title (Miaki)</th>
+                          <th class="text-right">Total Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Total Reveneu:</td>
+                          <td>{{ number_format($duration_wise['miaki']['tot_rev']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)BTRC Reveneu Share(6.5%)</td>
+                          <td>{{ number_format($duration_wise['miaki']['btrc']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>Subtotal</td>
+                          <td>{{ number_format($duration_wise['miaki']['subtotal']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>Our Gross Revenue</td>
+                          <td>{{ number_format($duration_wise['miaki']['gross']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)VAT (5%)</td>
+                          <td>{{ number_format($duration_wise['miaki']['vat']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)AIT</td>
+                          <td>{{ number_format($duration_wise['miaki']['ait']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)Rebate</td>
+                          <td>{{ number_format($duration_wise['miaki']['rebate']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>Net Payable to Our Bank Account</td>
+                          <td>{{ number_format($duration_wise['miaki']['net']) }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   
-                  
+
                 </div>
 
                 <div id="month" class="tab-pane fade">
