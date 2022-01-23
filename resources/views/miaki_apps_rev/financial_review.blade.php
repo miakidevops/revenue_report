@@ -85,15 +85,16 @@
                           <td class="text-right">{{ number_format($rev_obj->tot_other_rev) }}</td>
                           <td class="text-right">{{ number_format($rev_obj->tot_miaki_rev + $rev_obj->tot_mmlbd_rev + $rev_obj->tot_other_rev) }}</td>
                         </tr>
-                        <th>
-                          <td class="text-right">-</td>
-                          <td class="text-right">Total Sum:</td>
-                          <td class="text-right">{{ number_format($sum_tot_miaki_rev) }}</td>
-                          <td class="text-right">{{ number_format($sum_tot_mmlbd_rev) }}</td>
-                          <td class="text-right">{{ number_format($sum_tot_other_rev) }}</td>
-                          <td class="text-right">{{ number_format( $sum_tot_miaki_rev + $sum_tot_mmlbd_rev + $sum_tot_other_rev ) }}</td>
-                        </th>
                         @endforeach
+                        
+                        <tr>
+                          <th class="text-right">-</th>
+                          <th class="text-right">Total Sum:</th>
+                          <th class="text-right">{{ number_format($sum_tot_miaki_rev) }}</th>
+                          <th class="text-right">{{ number_format($sum_tot_mmlbd_rev) }}</th>
+                          <th class="text-right">{{ number_format($sum_tot_other_rev) }}</th>
+                          <th class="text-right">{{ number_format( $sum_tot_miaki_rev + $sum_tot_mmlbd_rev + $sum_tot_other_rev ) }}</th>
+                        </tr>
                       </tbody>
                     </table>
                 </div>
