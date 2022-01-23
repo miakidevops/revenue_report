@@ -826,7 +826,7 @@ class Miaki_apps_revenue_controller extends Controller
 
     // ==========================================================================================
 
-    public function financial_review2(Request $request)
+    public function financial_review(Request $request)
     {
         if( $request->has('start') && $request->has('end') ){
             $search['start'] = $request->input('start');
@@ -835,7 +835,8 @@ class Miaki_apps_revenue_controller extends Controller
             $search['start'] = date("Y-m-d", strtotime("-29 day"));
             $search['end'] = date('Y-m-d');
         }
-        
+
+         return view('miaki_apps_rev.financial_review',compact('search'));
     }
 
     public function financial_review2(Request $request)
