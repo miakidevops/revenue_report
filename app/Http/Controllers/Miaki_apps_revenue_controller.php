@@ -852,7 +852,7 @@ class Miaki_apps_revenue_controller extends Controller
             "12" => "December"
         );
 
-        $month_wise_all_revenue = BdappsRevenue::select( DB::raw('sum(miaki_rev) as tot_miaki_rev'),
+        $month_wise_all_revenue_obj = BdappsRevenue::select( DB::raw('sum(miaki_rev) as tot_miaki_rev'),
                                             DB::raw('sum(mmlbd_rev) as tot_mmlbd_rev'),
                                             DB::raw('sum(other_rev) as tot_other_rev'), 
                                             DB::raw('YEAR(rev_date) year, 
@@ -862,9 +862,34 @@ class Miaki_apps_revenue_controller extends Controller
                                       ->groupby('year','month')
                                       ->get();
 
+        $month_wise_all_revenue = [];
+        foreach ($month_wise_all_revenue as $obj) {
+
+            $month_wise_all_revenue[] = array(
+                "year" => $obj->year,
+                "month" => $obj->month,
+                "miaki_rev" => $this->getCalculatedValue($obj->tot_miaki_rev),
+                "mmlbd_rev" => $this->getCalculatedValue($obj->tot_mmlbd_rev),
+                "other_rev" => $this->getCalculatedValue($obj->tot_other_rev),
+            );
+        }
+
+        dd($month_wise_all_revenue);
+
 
         return view('miaki_apps_rev.financial_review',compact('search', 'month_name', 'month_wise_all_revenue'));
     }
+
+
+    private function getCalculatedValue ( $value ) 
+    {
+
+        $value =  ( $value - ($value * (6.5/100)) )/2;
+        $value = round( $value - ($value * (5/100)) );
+        return $value;
+
+    }
+
 
     public function financial_review2(Request $request)
     {
