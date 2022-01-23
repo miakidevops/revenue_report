@@ -842,8 +842,8 @@ class Miaki_apps_revenue_controller extends Controller
                                             DB::raw('sum(other_rev) as tot_other_rev'), 
                                             DB::raw('YEAR(rev_date) year, 
                                                     MONTH(rev_date) month')) 
-                                      ->where('date','>=',$search['start'])
-                                      ->where('date','<=',$search['end']) 
+                                      ->where('rev_date','>=',$search['start'])
+                                      ->where('rev_date','<=',$search['end']) 
                                       ->groupby('year','month')
                                       ->get();
 
