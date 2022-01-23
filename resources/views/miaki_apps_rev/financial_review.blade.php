@@ -40,9 +40,9 @@
             <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::   ::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
            <div class="panel-body">
 
-            <ul class="nav nav-pills">
-                <li class="active"><a data-toggle="pill" href="#duration">Duration Wise</a></li>
-                <li><a data-toggle="pill" href="#month">Month Wise</a></li>
+            <ul class="nav nav-pills" style="padding: 30px 0px">
+                <li style="border: 2px solid #d4d4eb" class="active"><a data-toggle="pill" href="#duration">Duration Wise</a></li>
+                <li style="border: 2px solid #d4d4eb"><a data-toggle="pill" href="#month">Month Wise</a></li>
               </ul>
               
               <div class="tab-content">
@@ -75,7 +75,7 @@
                         <tr>
                           @php
                             $sum_tot_miaki_rev += $rev_obj->tot_miaki_rev;
-                            $sum_tot_mmlbd_rev += $rev_obj->tot_miaki_rev;
+                            $sum_tot_mmlbd_rev += $rev_obj->tot_mmlbd_rev;
                             $sum_tot_other_rev += $rev_obj->tot_other_rev;
                           @endphp
                           <td >{{ $rev_obj->year }}</td>
@@ -86,7 +86,7 @@
                           <td class="text-right">{{ number_format($rev_obj->tot_miaki_rev + $rev_obj->tot_mmlbd_rev + $rev_obj->tot_other_rev) }}</td>
                         </tr>
                         @endforeach
-                        
+
                         <tr>
                           <th class="text-right">-</th>
                           <th class="text-right">Total Sum:</th>
