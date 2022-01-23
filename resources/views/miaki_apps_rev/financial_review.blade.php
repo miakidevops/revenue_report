@@ -73,6 +73,7 @@
                           <td>{{ $rev_obj->tot_other_rev }}</td>
                           <td>{{ $rev_obj->tot_miaki_rev + $rev_obj->tot_mmlbd_rev + $rev_obj->tot_other_rev }}</td>
                         </tr>
+                        @endforeach
                       </tbody>
                     </table>
                 </div>
