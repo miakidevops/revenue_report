@@ -53,15 +53,15 @@
 
                 <div id="month" class="tab-pane fade">
                     <h3>Month Wise Revenue:</h3>
-                    <table class="table table-hover">
+                    <table class="table table-hover table-bordered">
                       <thead>
                         <tr>
                           <th>Year</th>
                           <th>Month</th>
-                          <th>Miaki</th>
-                          <th>MMLBD</th>
-                          <th>Other</th>
-                          <th>Total</th>
+                          <th class="text-right">Miaki</th>
+                          <th class="text-right">MMLBD</th>
+                          <th class="text-right">Other</th>
+                          <th class="text-right">Total</th>
                         </tr>
                       </thead>
                       <tbody>
