@@ -37,126 +37,24 @@
                     </div>
                 </div>
             </div>
-            <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::  TOTAL  ::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
-            <div class="panel-body">
-              <h1 class="text-center"><b>Total Revenue</b></h1>
-              @php $ind = 0; @endphp
-              @foreach($all_data as $data)
-                <table class="table table-bordered table-hover">
-                    <tbody>
-                      <tr>
-                        <td> <b>(SL: {{++$ind}} )</b> Date :</td>
-                        <th class="text-right">{{$data['year']}}-{{$data['month']}}</th>
-                      </tr>
-                      <tr>
-                        <td>Total Revenue :</td>
-                        <th class="text-right">{{number_format($data['tot_revenue'],2)}} Tk</th>
-                      </tr>
-                      <tr>
-                        <td>Less:6.5% BTRC Revenue :</td>
-                        <th class="text-right">{{number_format($data['btrc_revenue'],2)}} Tk</th>
-                      </tr>
-                      <tr>
-                        <td>Miaki + Robi :</td>
-                        <th class="text-right">{{number_format($data['miaki_robi_rev'],2)}} Tk</th>
-                      </tr>
-                      <tr>
-                        <td>Miaki :</td>
-                        <th class="text-right">{{number_format($data['miaki_rev'],2)}} Tk</th>
-                      </tr>
-                      <tr>
-                        <td>Less: Vat5% :</td>
-                        <th class="text-right">{{number_format($data['vat'],2)}} Tk</th>
-                      </tr>
-                      <tr>
-                        <td>Final Revenue :</td>
-                        <th class="text-right">{{number_format($data['final_revenue'],2)}} Tk</th>
-                      </tr>
-                    </tbody>
-                </table>
-              @endforeach
-
-            </div>
-            <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::  MIAKI  ::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
-            <div class="panel-body">
-                <h1 class="text-center"><b>Total Miaki Revenue</b></h1>
-                @php $ind = 0; @endphp
-                @foreach($all_data_miaki as $data_miaki)
-                  <table class="table table-bordered table-hover">
-                      <tbody>
-                        <tr>
-                          <td> <b>(SL: {{++$ind}} )</b> Date :</td>
-                          <th class="text-right">{{$data_miaki['year']}}-{{$data_miaki['month']}}</th>
-                        </tr>
-                        <tr>
-                          <td>Total Revenue (Miaki):</td>
-                          <th class="text-right">{{number_format($data_miaki['tot_revenue_miaki'],2)}} Tk</th>
-                        </tr>
-                        <tr>
-                          <td>Less:6.5% BTRC Revenue :</td>
-                          <th class="text-right">{{number_format($data_miaki['btrc_revenue'],2)}} Tk</th>
-                        </tr>
-                        <tr>
-                          <td>Miaki + Robi :</td>
-                          <th class="text-right">{{number_format($data_miaki['miaki_robi_rev'],2)}} Tk</th>
-                        </tr>
-                        <tr>
-                          <td>Miaki :</td>
-                          <th class="text-right">{{number_format($data_miaki['miaki_rev'],2)}} Tk</th>
-                        </tr>
-                        <tr>
-                          <td>Less: Vat5% :</td>
-                          <th class="text-right">{{number_format($data_miaki['vat'],2)}} Tk</th>
-                        </tr>
-                        <tr>
-                          <td>Final Revenue :</td>
-                          <th class="text-right">{{number_format($data_miaki['final_revenue'],2)}} Tk</th>
-                        </tr>
-                      </tbody>
-                  </table>
-                @endforeach
-            </div>
-            <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::  MMLBD  ::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
-            <div class="panel-body">
-                <h1 class="text-center"><b>Total MMLBD Revenue</b></h1>
-                @php $ind = 0; @endphp
-                @foreach($all_data_mmlbd as $data_mmlbd)
-
-                  <table class="table table-bordered table-hover">
-                      <tbody>
-                        <tr>
-                          <td> <b>(SL: {{++$ind}} )</b> Date :</td>
-                          <th class="text-right">{{$data_mmlbd['year']}}-{{$data_mmlbd['month']}}</th>
-                        </tr>
-                        <tr>
-                          <td>Total Revenue (MMLBD):</td>
-                          <th class="text-right">{{number_format($data_mmlbd['tot_revenue_mmlbd'],2)}} Tk</th>
-                        </tr>
-                        <tr>
-                          <td>Less:6.5% BTRC Revenue :</td>
-                          <th class="text-right">{{number_format($data_mmlbd['btrc_revenue'],2)}} Tk</th>
-                        </tr>
-                        <tr>
-                          <td>Miaki + Robi :</td>
-                          <th class="text-right">{{number_format($data_mmlbd['miaki_robi_rev'],2)}} Tk</th>
-                        </tr>
-                        <tr>
-                          <td>Miaki :</td>
-                          <th class="text-right">{{number_format($data_mmlbd['miaki_rev'],2)}} Tk</th>
-                        </tr>
-                        <tr>
-                          <td>Less: Vat5% :</td>
-                          <th class="text-right">{{number_format($data_mmlbd['vat'],2)}} Tk</th>
-                        </tr>
-                        <tr>
-                          <td>Final Revenue :</td>
-                          <th class="text-right">{{number_format($data_mmlbd['final_revenue'],2)}} Tk</th>
-                        </tr>
-                      </tbody>
-                  </table>
-
-                @endforeach
-            </div>
+            <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::   ::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+           
+            <ul class="nav nav-pills">
+                <li class="active"><a data-toggle="pill" href="#duration">Duration Wise</a></li>
+                <li><a data-toggle="pill" href="#month">Month Wise</a></li>
+              </ul>
+              
+              <div class="tab-content">
+                <div id="duration" class="tab-pane fade in active">
+                  <h3>HOME</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div id="month" class="tab-pane fade">
+                  <h3>Menu 1</h3>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+           
         </div>
     </div>
     @endsection
