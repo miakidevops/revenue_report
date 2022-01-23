@@ -859,35 +859,35 @@ class Miaki_apps_revenue_controller extends Controller
 
 
         $mia_tot_rev = $duration_wise_arr['miaki_rev'];
-        $mia_btrc = round( $mia_tot_rev * (6.5/100) );
-        $mia_subtot = round( $mia_tot_rev - $mia_btrc );
+        $mia_btrc = round( $mia_tot_rev * (6.5/100), 2 );
+        $mia_subtot = round( $mia_tot_rev - $mia_btrc, 2 );
         $mia_gross = $mia_subtot / 2;
-        $mia_vat = round( $mia_gross * (5/100) ); 
-        $mia_net = round( $mia_gross - $mia_vat );
+        $mia_vat = round( $mia_gross * (5/100) , 2); 
+        $mia_net = round( $mia_gross - $mia_vat, 2 );
 
 
         $mml_tot_rev = $duration_wise_arr['mmlbd_rev'];
-        $mml_btrc = round( $mml_tot_rev * (6.5/100) );
-        $mml_subtot = round( $mml_tot_rev - $mml_btrc );
+        $mml_btrc = round( $mml_tot_rev * (6.5/100), 2 );
+        $mml_subtot = round( $mml_tot_rev - $mml_btrc, 2 );
         $mml_gross = $mml_subtot / 2;
-        $mml_vat = round( $mml_gross * (5/100) ); 
-        $mml_net = round( $mml_gross - $mml_vat );
+        $mml_vat = round( $mml_gross * (5/100) , 2); 
+        $mml_net = round( $mml_gross - $mml_vat, 2 );
 
 
         $otr_tot_rev = $duration_wise_arr['other_rev'];
-        $otr_btrc = round( $otr_tot_rev * (6.5/100) );
-        $otr_subtot = round( $otr_tot_rev - $otr_btrc );
+        $otr_btrc = round( $otr_tot_rev * (6.5/100), 2 );
+        $otr_subtot = round( $otr_tot_rev - $otr_btrc, 2 );
         $otr_gross = $otr_subtot / 2;
-        $otr_vat = round( $otr_gross * (5/100) ); 
-        $otr_net = round( $otr_gross - $otr_vat );
+        $otr_vat = round( $otr_gross * (5/100) , 2); 
+        $otr_net = round( $otr_gross - $otr_vat, 2 );
 
 
         $all_tot_rev = $duration_wise_arr['miaki_rev'] + $duration_wise_arr['mmlbd_rev'] + $duration_wise_arr['other_rev'];
-        $all_btrc = round( $all_tot_rev * (6.5/100) );
-        $all_subtot = round( $all_tot_rev - $all_btrc );
+        $all_btrc = round( $all_tot_rev * (6.5/100), 2 );
+        $all_subtot = round( $all_tot_rev - $all_btrc, 2 );
         $all_gross = $all_subtot / 2;
-        $all_vat = round( $all_gross * (5/100) ); 
-        $all_net = round( $all_gross - $all_vat );
+        $all_vat = round( $all_gross * (5/100) , 2); 
+        $all_net = round( $all_gross - $all_vat, 2 );
 
 
         $duration_wise = [

@@ -61,35 +61,35 @@
                       <tbody>
                         <tr>
                           <td>Total Reveneu:</td>
-                          <td class="text-right">{{ number_format($duration_wise['all']['tot_rev']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['tot_rev'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)BTRC Reveneu Share(6.5%)</td>
-                          <td class="text-right">{{ number_format($duration_wise['all']['btrc']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['btrc'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>Subtotal</td>
-                          <td class="text-right">{{ number_format($duration_wise['all']['subtotal']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['subtotal'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>Our Gross Revenue (.5)</td>
-                          <td class="text-right">{{ number_format($duration_wise['all']['gross']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['gross'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)VAT (5%)</td>
-                          <td class="text-right">{{ number_format($duration_wise['all']['vat']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['vat'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)AIT (0%)</td>
-                          <td class="text-right">{{ number_format($duration_wise['all']['ait']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['ait'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)Rebate (0)</td>
-                          <td class="text-right">{{ number_format($duration_wise['all']['rebate']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['rebate'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>Net Payable to Our Bank Account</td>
-                          <td class="text-right">{{ number_format($duration_wise['all']['net']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['all']['net'], 2) }}</td>
                         </tr>
                       </tbody>
                     </table>
@@ -106,35 +106,35 @@
                       <tbody>
                         <tr>
                           <td>Total Reveneu:</td>
-                          <td class="text-right">{{ number_format($duration_wise['miaki']['tot_rev']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['tot_rev'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)BTRC Reveneu Share(6.5%)</td>
-                          <td class="text-right">{{ number_format($duration_wise['miaki']['btrc']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['btrc'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>Subtotal</td>
-                          <td class="text-right">{{ number_format($duration_wise['miaki']['subtotal']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['subtotal'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>Our Gross Revenue (.5)</td>
-                          <td class="text-right">{{ number_format($duration_wise['miaki']['gross']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['gross'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)VAT (5%)</td>
-                          <td class="text-right">{{ number_format($duration_wise['miaki']['vat']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['vat'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)AIT (0%)</td>
-                          <td class="text-right">{{ number_format($duration_wise['miaki']['ait']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['ait'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)Rebate (0)</td>
-                          <td class="text-right">{{ number_format($duration_wise['miaki']['rebate']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['rebate'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>Net Payable to Our Bank Account</td>
-                          <td class="text-right">{{ number_format($duration_wise['miaki']['net']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['net'], 2) }}</td>
                         </tr>
                       </tbody>
                     </table>
@@ -151,35 +151,35 @@
                       <tbody>
                         <tr>
                           <td>Total Reveneu:</td>
-                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['tot_rev']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['tot_rev'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)BTRC Reveneu Share(6.5%)</td>
-                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['btrc']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['btrc'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>Subtotal</td>
-                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['subtotal']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['subtotal'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>Our Gross Revenue (.5)</td>
-                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['gross']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['gross'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)VAT (5%)</td>
-                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['vat']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['vat'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)AIT (0%)</td>
-                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['ait']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['ait'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)Rebate (0)</td>
-                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['rebate']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['rebate'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>Net Payable to Our Bank Account</td>
-                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['net']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['net'], 2) }}</td>
                         </tr>
                       </tbody>
                     </table>
@@ -196,35 +196,35 @@
                       <tbody>
                         <tr>
                           <td>Total Reveneu:</td>
-                          <td class="text-right">{{ number_format($duration_wise['other']['tot_rev']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['tot_rev'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)BTRC Reveneu Share(6.5%)</td>
-                          <td class="text-right">{{ number_format($duration_wise['other']['btrc']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['btrc'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>Subtotal</td>
-                          <td class="text-right">{{ number_format($duration_wise['other']['subtotal']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['subtotal'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>Our Gross Revenue (.5)</td>
-                          <td class="text-right">{{ number_format($duration_wise['other']['gross']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['gross'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)VAT (5%)</td>
-                          <td class="text-right">{{ number_format($duration_wise['other']['vat']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['vat'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)AIT (0%)</td>
-                          <td class="text-right">{{ number_format($duration_wise['other']['ait']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['ait'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>(-)Rebate (0)</td>
-                          <td class="text-right">{{ number_format($duration_wise['other']['rebate']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['rebate'], 2) }}</td>
                         </tr>
                         <tr>
                           <td>Net Payable to Our Bank Account</td>
-                          <td class="text-right">{{ number_format($duration_wise['other']['net']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['net'], 2) }}</td>
                         </tr>
                       </tbody>
                     </table>
@@ -250,20 +250,20 @@
                         <tr>
                           <td >{{ $rev_arr['year'] }}</td>
                           <td class="text-right">{{ $month_name[$rev_arr['month']] }}</td>
-                          <td class="text-right">{{ number_format($rev_arr['miaki_rev']) }}</td>
-                          <td class="text-right">{{ number_format($rev_arr['mmlbd_rev']) }}</td>
-                          <td class="text-right">{{ number_format($rev_arr['other_rev']) }}</td>
-                          <td class="text-right">{{ number_format($rev_arr['miaki_rev'] + $rev_arr['mmlbd_rev'] + $rev_arr['other_rev']) }}</td>
+                          <td class="text-right">{{ number_format($rev_arr['miaki_rev'], 2) }}</td>
+                          <td class="text-right">{{ number_format($rev_arr['mmlbd_rev'], 2) }}</td>
+                          <td class="text-right">{{ number_format($rev_arr['other_rev'], 2) }}</td>
+                          <td class="text-right">{{ number_format($rev_arr['miaki_rev'] + $rev_arr['mmlbd_rev'] + $rev_arr['other_rev'], 2) }}</td>
                         </tr>
                         @endforeach
 
                         <tr>
                           <th class="text-right">-</th>
                           <th class="text-right">Total Sum:</th>
-                          <th class="text-right">{{ number_format($month_wise_3_type_rev['miaki_rev']) }}</th>
-                          <th class="text-right">{{ number_format($month_wise_3_type_rev['mmlbd_rev']) }}</th>
-                          <th class="text-right">{{ number_format($month_wise_3_type_rev['other_rev']) }}</th>
-                          <th class="text-right">{{ number_format( $month_wise_3_type_rev['miaki_rev'] + $month_wise_3_type_rev['mmlbd_rev'] + $month_wise_3_type_rev['other_rev'] ) }}</th>
+                          <th class="text-right">{{ number_format($month_wise_3_type_rev['miaki_rev'], 2) }}</th>
+                          <th class="text-right">{{ number_format($month_wise_3_type_rev['mmlbd_rev'], 2) }}</th>
+                          <th class="text-right">{{ number_format($month_wise_3_type_rev['other_rev'], 2) }}</th>
+                          <th class="text-right">{{ number_format( $month_wise_3_type_rev['miaki_rev'] + $month_wise_3_type_rev['mmlbd_rev'] + $month_wise_3_type_rev['other_rev'], 2 ) }}</th>
                         </tr>
                       </tbody>
                     </table>
