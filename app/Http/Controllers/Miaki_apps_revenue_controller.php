@@ -865,6 +865,23 @@ class Miaki_apps_revenue_controller extends Controller
         $mia_vat = round( $mia_gross * (5/100) ); 
         $mia_net = round( $mia_gross - $mia_vat );
 
+
+        $mml_tot_rev = $duration_wise_arr['mmlbd_rev'];
+        $mml_btrc = round( $mml_tot_rev * (6.5/100) );
+        $mml_subtot = round( $mml_tot_rev - $mml_btrc );
+        $mml_gross = $mml_subtot / 2;
+        $mml_vat = round( $mml_gross * (5/100) ); 
+        $mml_net = round( $mml_gross - $mml_vat );
+
+
+        $otr_tot_rev = $duration_wise_arr['other_rev'];
+        $otr_btrc = round( $otr_tot_rev * (6.5/100) );
+        $otr_subtot = round( $otr_tot_rev - $otr_btrc );
+        $otr_gross = $otr_subtot / 2;
+        $otr_vat = round( $otr_gross * (5/100) ); 
+        $otr_net = round( $otr_gross - $otr_vat );
+
+
         $duration_wise = [
             "miaki" => [
                 "tot_rev" => $mia_tot_rev,
@@ -873,6 +890,26 @@ class Miaki_apps_revenue_controller extends Controller
                 "gross" => $mia_gross,
                 "vat" => $mia_vat,
                 "net" => $mia_net,
+                "ait" => 0,
+                "rebate" => 0
+            ],
+            "mmlbd" => [
+                "tot_rev" => $mml_tot_rev,
+                "btrc" => $mml_btrc,
+                "subtotal" => $mml_subtot,
+                "gross" => $mml_gross,
+                "vat" => $mml_vat,
+                "net" => $mml_net,
+                "ait" => 0,
+                "rebate" => 0
+            ],
+            "other" => [
+                "tot_rev" => $otr_tot_rev,
+                "btrc" => $otr_btrc,
+                "subtotal" => $otr_subtot,
+                "gross" => $otr_gross,
+                "vat" => $otr_vat,
+                "net" => $otr_net,
                 "ait" => 0,
                 "rebate" => 0
             ]
