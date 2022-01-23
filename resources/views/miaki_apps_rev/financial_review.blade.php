@@ -67,11 +67,11 @@
                         @foreach ($month_wise_all_revenue as $rev_obj)
                         <tr>
                           <td>{{ $rev_obj->year }}</td>
-                          <td>{{ $rev_obj->month }}</td>
-                          <td>{{ $rev_obj->tot_miaki_rev }}</td>
-                          <td>{{ $rev_obj->tot_mmlbd_rev }}</td>
-                          <td>{{ $rev_obj->tot_other_rev }}</td>
-                          <td>{{ $rev_obj->tot_miaki_rev + $rev_obj->tot_mmlbd_rev + $rev_obj->tot_other_rev }}</td>
+                          <td>{{ $month_name[$rev_obj->month] }}</td>
+                          <td>{{ number_format($rev_obj->tot_miaki_rev) }}</td>
+                          <td>{{ number_format($rev_obj->tot_mmlbd_rev) }}</td>
+                          <td>{{ number_format($rev_obj->tot_other_rev) }}</td>
+                          <td>{{ number_format($rev_obj->tot_miaki_rev + $rev_obj->tot_mmlbd_rev + $rev_obj->tot_other_rev) }}</td>
                         </tr>
                         @endforeach
                       </tbody>
