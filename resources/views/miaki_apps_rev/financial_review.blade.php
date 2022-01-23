@@ -248,7 +248,7 @@
                       <tbody>
                         @foreach ($month_wise_all_revenue as $rev_arr)                       
                         <tr>
-                          <td >{{ $rev_arr['year'] }}</td>
+                          <td class="text-right">{{ $rev_arr['year'] }}</td>
                           <td class="text-right">{{ $month_name[$rev_arr['month']] }}</td>
                           <td class="text-right">{{ number_format($rev_arr['miaki_rev'], 2) }}</td>
                           <td class="text-right">{{ number_format($rev_arr['mmlbd_rev'], 2) }}</td>
