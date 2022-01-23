@@ -836,7 +836,21 @@ class Miaki_apps_revenue_controller extends Controller
             $search['end'] = date('Y-m-d');
         }
 
-         return view('miaki_apps_rev.financial_review',compact('search'));
+
+        $all_revenue = BdappsRevenue::select( DB::raw('sum(miaki_rev) as tot_miaki_rev'),
+                                            DB::raw('sum(mmlbd_rev) as tot_mmlbd_rev'),
+                                            DB::raw('sum(other_rev) as tot_other_rev'), 
+                                            DB::raw('YEAR(rev_date) year, 
+                                                    MONTH(rev_date) month')) 
+                                      ->where('date','>=',$search['start'])
+                                      ->where('date','<=',$search['end']) 
+                                      ->groupby('year','month')
+                                      ->get();
+
+        dd($all_revenue);
+
+
+        return view('miaki_apps_rev.financial_review',compact('search'));
     }
 
     public function financial_review2(Request $request)
