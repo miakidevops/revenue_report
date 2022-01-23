@@ -870,8 +870,9 @@ class Miaki_apps_revenue_controller extends Controller
             "other_rev" => 0,
         ];
 
+        $ind = 0;
         foreach ($month_wise_all_revenue_obj as $obj) {
-            $month_wise_all_revenue[] = array(
+            $month_wise_all_revenue[$ind] = array(
                 "year" => $obj->year,
                 "month" => $obj->month,
                 "miaki_rev" => $this->getCalculatedValue($obj->tot_miaki_rev),
@@ -879,9 +880,11 @@ class Miaki_apps_revenue_controller extends Controller
                 "other_rev" => $this->getCalculatedValue($obj->tot_other_rev),
             );
 
-             $month_wise_3_type_rev["miaki_rev"] += $month_wise_all_revenue[]['miaki_rev'];
-             $month_wise_3_type_rev["mmlbd_rev"] += $month_wise_all_revenue[]['mmlbd_rev'];
-             $month_wise_3_type_rev["other_rev"] += $month_wise_all_revenue[]['other_rev'];
+             $month_wise_3_type_rev["miaki_rev"] += $month_wise_all_revenue[$ind]['miaki_rev'];
+             $month_wise_3_type_rev["mmlbd_rev"] += $month_wise_all_revenue[$ind]['mmlbd_rev'];
+             $month_wise_3_type_rev["other_rev"] += $month_wise_all_revenue[$ind]['other_rev'];
+
+             $ind++;
         }
 
         dd($month_wise_3_type_rev);
