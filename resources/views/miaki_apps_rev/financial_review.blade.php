@@ -41,8 +41,8 @@
            <div class="panel-body">
 
             <ul class="nav nav-pills" style="padding: 30px 0px">
-                <li style="border: 2px solid #d4d4eb" class="active"><a data-toggle="pill" href="#duration">Duration Wise</a></li>
-                <li style="border: 2px solid #d4d4eb"><a data-toggle="pill" href="#month">Month Wise</a></li>
+                <li style="border: 2px solid #d4d4eb; border-radius: 5px;" class="active"><a data-toggle="pill" href="#duration">Duration Wise</a></li>
+                <li style="border: 2px solid #d4d4eb; border-radius: 5px;"><a data-toggle="pill" href="#month">Month Wise</a></li>
               </ul>
               
               <div class="tab-content">
