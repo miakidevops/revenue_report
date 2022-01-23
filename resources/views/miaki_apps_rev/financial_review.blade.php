@@ -74,9 +74,9 @@
                         @foreach ($month_wise_all_revenue as $rev_obj)
                         <tr>
                           @php
-                            $sum_tot_miaki_rev += tot_miaki_rev;
-                            $sum_tot_mmlbd_rev += tot_miaki_rev;
-                            $sum_tot_other_rev += tot_other_rev;
+                            $sum_tot_miaki_rev += $rev_obj->tot_miaki_rev;
+                            $sum_tot_mmlbd_rev += $rev_obj->tot_miaki_rev;
+                            $sum_tot_other_rev += $rev_obj->tot_other_rev;
                           @endphp
                           <td >{{ $rev_obj->year }}</td>
                           <td class="text-right">{{ $month_name[$rev_obj->month] }}</td>
