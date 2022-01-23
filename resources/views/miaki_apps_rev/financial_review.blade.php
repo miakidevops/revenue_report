@@ -38,7 +38,8 @@
                 </div>
             </div>
             <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::   ::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
-           
+           <div class="panel-body">
+
             <ul class="nav nav-pills">
                 <li class="active"><a data-toggle="pill" href="#duration">Duration Wise</a></li>
                 <li><a data-toggle="pill" href="#month">Month Wise</a></li>
@@ -68,16 +69,18 @@
                         <tr>
                           <td>{{ $rev_obj->year }}</td>
                           <td>{{ $month_name[$rev_obj->month] }}</td>
-                          <td>{{ number_format($rev_obj->tot_miaki_rev) }}</td>
-                          <td>{{ number_format($rev_obj->tot_mmlbd_rev) }}</td>
-                          <td>{{ number_format($rev_obj->tot_other_rev) }}</td>
-                          <td>{{ number_format($rev_obj->tot_miaki_rev + $rev_obj->tot_mmlbd_rev + $rev_obj->tot_other_rev) }}</td>
+                          <td class="text-right">{{ number_format($rev_obj->tot_miaki_rev) }}</td>
+                          <td class="text-right">{{ number_format($rev_obj->tot_mmlbd_rev) }}</td>
+                          <td class="text-right">{{ number_format($rev_obj->tot_other_rev) }}</td>
+                          <td class="text-right">{{ number_format($rev_obj->tot_miaki_rev + $rev_obj->tot_mmlbd_rev + $rev_obj->tot_other_rev) }}</td>
                         </tr>
                         @endforeach
                       </tbody>
                     </table>
                 </div>
               </div>
+
+            </div>
            
         </div>
     </div>
