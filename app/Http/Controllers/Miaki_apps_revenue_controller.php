@@ -845,11 +845,24 @@ class Miaki_apps_revenue_controller extends Controller
                                       ->where('rev_date','<=',$search['end']) 
                                       ->get();
 
+        $duration_wise_arr = [
+            "miaki_rev" => 0,
+            "mmlbd_rev" => 0,
+            "other_rev" => 0
+        ];  
+
+        foreach ($duration_wise_obj as $obj) {
+             $duration_wise_arr["miaki_rev"] += $obj->miaki_rev; 
+             $duration_wise_arr["mmlbd_rev"] += $obj->mmlbd_rev; 
+             $duration_wise_arr["other_rev"] += $obj->other_rev; 
+        }
+
+
         $duration_wise = [
             "miaki" => [
-                "tot_rev" => $duration_wise_obj->miaki_rev,
-                "btrc" => round( $duration_wise_obj->miaki_rev * (6.5/100) ),
-                "subtotal" => round( $duration_wise_obj->miaki_rev - ($duration_wise_obj->miaki_rev * (6.5/100)) ),
+                "tot_rev" => $duration_wise_arr['miaki_rev'],
+                "btrc" => round( $duration_wise_arr['miaki_rev'] * (6.5/100) ),
+                "subtotal" => round( $duration_wise_arr['miaki_rev'] - ($duration_wise_arr['miaki_rev'] * (6.5/100)) ),
                 "gross" => $duration_wise["miaki"]["subtotal"] / 2,
                 "vat" => round( $duration_wise["miaki"]["gross"] * (5/100) ),
                 "net" => round( $duration_wise["miaki"]["gross"] - $duration_wise["miaki"]["vat"] ),
