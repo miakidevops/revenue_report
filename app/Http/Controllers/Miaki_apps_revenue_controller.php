@@ -846,7 +846,7 @@ class Miaki_apps_revenue_controller extends Controller
                                       ->get();
 
         $duration_wise = [
-            "miaki" = [
+            "miaki" => [
                 "tot_rev" => $duration_wise_obj->miaki_rev,
                 "btrc" => round( $duration_wise_obj->miaki_rev * (6.5/100) ),
                 "subtotal" => round( $duration_wise_obj->miaki_rev - ($duration_wise_obj->miaki_rev * (6.5/100)) ),
