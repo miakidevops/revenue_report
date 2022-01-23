@@ -56,8 +56,8 @@
                     <table class="table table-hover table-bordered">
                       <thead>
                         <tr>
-                          <th>Year</th>
-                          <th>Month</th>
+                          <th class="text-right">Year</th>
+                          <th class="text-right">Month</th>
                           <th class="text-right">Miaki</th>
                           <th class="text-right">MMLBD</th>
                           <th class="text-right">Other</th>
@@ -67,8 +67,8 @@
                       <tbody>
                         @foreach ($month_wise_all_revenue as $rev_obj)
                         <tr>
-                          <td>{{ $rev_obj->year }}</td>
-                          <td>{{ $month_name[$rev_obj->month] }}</td>
+                          <td class="text-right">{{ $rev_obj->year }}</td>
+                          <td class="text-right">{{ $month_name[$rev_obj->month] }}</td>
                           <td class="text-right">{{ number_format($rev_obj->tot_miaki_rev) }}</td>
                           <td class="text-right">{{ number_format($rev_obj->tot_mmlbd_rev) }}</td>
                           <td class="text-right">{{ number_format($rev_obj->tot_other_rev) }}</td>
