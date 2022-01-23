@@ -49,50 +49,140 @@
                 <div id="duration" class="tab-pane fade in active">
                     <h3>Duration Wise Revenue:</h3>
 
-                    <h5>Miaki</h5>
+                    <h5 style="padding-top: 25px">Miaki</h5>
                     <table class="table table-hover">
                       <thead>
                         <tr>
                           <th>Title (Miaki)</th>
-                          <th class="text-right">Total Amount</th>
+                          <th>Total Amount</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td>Total Reveneu:</td>
-                          <td>{{ number_format($duration_wise['miaki']['tot_rev']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['tot_rev']) }}</td>
                         </tr>
                         <tr>
                           <td>(-)BTRC Reveneu Share(6.5%)</td>
-                          <td>{{ number_format($duration_wise['miaki']['btrc']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['btrc']) }}</td>
                         </tr>
                         <tr>
                           <td>Subtotal</td>
-                          <td>{{ number_format($duration_wise['miaki']['subtotal']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['subtotal']) }}</td>
                         </tr>
                         <tr>
-                          <td>Our Gross Revenue</td>
-                          <td>{{ number_format($duration_wise['miaki']['gross']) }}</td>
+                          <td>Our Gross Revenue (.5)</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['gross']) }}</td>
                         </tr>
                         <tr>
                           <td>(-)VAT (5%)</td>
-                          <td>{{ number_format($duration_wise['miaki']['vat']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['vat']) }}</td>
                         </tr>
                         <tr>
-                          <td>(-)AIT</td>
-                          <td>{{ number_format($duration_wise['miaki']['ait']) }}</td>
+                          <td>(-)AIT (0%)</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['ait']) }}</td>
                         </tr>
                         <tr>
-                          <td>(-)Rebate</td>
-                          <td>{{ number_format($duration_wise['miaki']['rebate']) }}</td>
+                          <td>(-)Rebate (0)</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['rebate']) }}</td>
                         </tr>
                         <tr>
                           <td>Net Payable to Our Bank Account</td>
-                          <td>{{ number_format($duration_wise['miaki']['net']) }}</td>
+                          <td class="text-right">{{ number_format($duration_wise['miaki']['net']) }}</td>
                         </tr>
                       </tbody>
                     </table>
-                  
+                    <!-- ------------------------------------------------------ -->
+
+                    <h5 style="padding-top: 25px">MMLBD</h5>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Title (MMLBD)</th>
+                          <th>Total Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Total Reveneu:</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['tot_rev']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)BTRC Reveneu Share(6.5%)</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['btrc']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>Subtotal</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['subtotal']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>Our Gross Revenue (.5)</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['gross']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)VAT (5%)</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['vat']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)AIT (0%)</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['ait']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)Rebate (0)</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['rebate']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>Net Payable to Our Bank Account</td>
+                          <td class="text-right">{{ number_format($duration_wise['mmlbd']['net']) }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- ------------------------------------------------------ -->
+
+                    <h5 style="padding-top: 25px">Other</h5>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Title (Other)</th>
+                          <th>Total Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Total Reveneu:</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['tot_rev']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)BTRC Reveneu Share(6.5%)</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['btrc']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>Subtotal</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['subtotal']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>Our Gross Revenue (.5)</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['gross']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)VAT (5%)</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['vat']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)AIT (0%)</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['ait']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>(-)Rebate (0)</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['rebate']) }}</td>
+                        </tr>
+                        <tr>
+                          <td>Net Payable to Our Bank Account</td>
+                          <td class="text-right">{{ number_format($duration_wise['other']['net']) }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- ------------------------------------------------------ -->
 
                 </div>
 
