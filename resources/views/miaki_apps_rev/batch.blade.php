@@ -91,7 +91,7 @@
                           <label class="control-label" for="target_date">Date:</label>
                       </div>
                       <div class="col-md-12 col-sm-12 col-xs-12">
-                          <input type="month" class="form-control" name="target_date" id="target_date" min="2019-01" max="2022-12" value="{{date('Y-m')}}" required> 
+                          <input type="month" class="form-control" name="target_date" id="target_date" min="2019-01" max="2042-12" value="{{date('Y-m')}}" required> 
                       </div>
                   </div>
 
