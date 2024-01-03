@@ -80,7 +80,7 @@ class LoginController extends Controller
 
                                                 
             // return redirect('/homePage');
-            return redirect('/bdapps');
+            return redirect('/miaki_revenue');
         } 
     }
 
