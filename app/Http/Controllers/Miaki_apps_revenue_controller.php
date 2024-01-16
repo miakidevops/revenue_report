@@ -672,7 +672,7 @@ class Miaki_apps_revenue_controller extends Controller
         foreach ($month_wise_revenue_obj as $obj) {
             $month_wise_revenue[$obj->year][str_pad($obj->month, 2, "0", STR_PAD_LEFT)] =  $obj->tot_revenue;   
         } 
-        dd($month_wise_revenue);         
+        // dd($month_wise_revenue);         
 
     	return view('miaki_apps_rev.target',compact('all_data','month_name','month_wise_revenue'));
     }
