@@ -28,7 +28,7 @@
                     @php $ind = 0 @endphp
                     @foreach($all_data as $data)
                     <tr>
-                        <th class="text-center">{{$loop->iteration}}</th>
+                        <th class="text-center">{{$ind}}</th>
                         <th class="text-center">{{$data->year}}</th>
                         <th class="text-center">{{$month_name[$data->month]}}</th>
                         <th class="text-right">{{  number_format( $data->revenue ,2,'.',',') }}</th>
@@ -41,7 +41,7 @@
                             @else
                                 <i class="fa fa-arrow-down" aria-hidden="true" style="color:red; font-size:16px; padding-left:3px"></i>
                             @endif
-                            
+
                         @endif
                         </th>
                         <th class="text-right">
