@@ -61,6 +61,8 @@
                                     <i class="fa fa-minus" aria-hidden="true" style="color:red; font-size:16px; padding-left:3px"></i>
                                 @endif 
 
+                            @else
+                                0
                             @endif
                         </th>
                         
