@@ -36,7 +36,7 @@
                         <th class="text-right">
                         @if ( array_key_exists($data->year, $month_wise_revenue) && array_key_exists($data->month, $month_wise_revenue[$data->year]) )
 
-                            {{  number_format( $month_wise_revenue[$ind] ,2,'.',',') }}
+                            {{  number_format( $month_wise_revenue[$data->year][$data->month] ,2,'.',',') }}
                             
                         @else   
                             0 
