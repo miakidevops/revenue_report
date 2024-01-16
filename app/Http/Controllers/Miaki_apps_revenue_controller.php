@@ -637,7 +637,7 @@ class Miaki_apps_revenue_controller extends Controller
     public function all_target_revenue()
     {
     	$all_data = TargetRevenue::orderBy('year','desc')->orderBy('month','desc')->get();
-    	// dd($all_data);
+    	dd($all_data);
     	$month_name = array(
     		1 => "January",
     		2 => "February",
