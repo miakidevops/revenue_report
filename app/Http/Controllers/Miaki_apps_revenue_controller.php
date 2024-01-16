@@ -637,7 +637,7 @@ class Miaki_apps_revenue_controller extends Controller
     public function all_target_revenue()
     {
     	$all_data = TargetRevenue::orderBy('year','desc')->orderBy('month','desc')->get();
-    	dd($all_data);
+    	// dd($all_data);
     	$month_name = array(
     		1 => "January",
     		2 => "February",
@@ -672,7 +672,7 @@ class Miaki_apps_revenue_controller extends Controller
         foreach ($month_wise_revenue_obj as $obj) {
             $month_wise_revenue[$ind] = [
                 'revenue' => $obj->tot_revenue,
-                'month' => $obj->month,
+                'month' => str_pad($obj->month, 2, "0", STR_PAD_LEFT),
                 'year' => $obj->year,
             ];  
             $ind++;      
