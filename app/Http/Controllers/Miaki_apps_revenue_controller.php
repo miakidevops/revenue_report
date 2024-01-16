@@ -665,7 +665,7 @@ class Miaki_apps_revenue_controller extends Controller
                   ->orderBy(DB::raw("YEAR(date)"),'desc')
                   ->orderBy(DB::raw("MONTH(date)"),'desc')
                   ->get();
-        // dd($month_wise_revenue_obj);
+        dd($month_wise_revenue_obj);
 
         $month_wise_revenue = array();
         foreach ($month_wise_revenue_obj as $obj) {
