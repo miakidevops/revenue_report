@@ -34,19 +34,34 @@
                         <th class="text-right">{{  number_format( $data->revenue ,2,'.',',') }}</th>
 
                         <th class="text-right">
-                        @if ( array_key_exists($data->year, $month_wise_revenue) && array_key_exists($data->month, $month_wise_revenue[$data->year]) )
+                            @if ( array_key_exists($data->year, $month_wise_revenue) && array_key_exists($data->month, $month_wise_revenue[$data->year]) )
 
-                            {{  number_format( $month_wise_revenue[$data->year][$data->month] ,2,'.',',') }}
+                                {{  number_format( $month_wise_revenue[$data->year][$data->month] ,2,'.',',') }}
 
-                            @if ( $month_wise_revenue[$data->year][$data->month] > 0 ) 
-                                <i class="fa fa-arrow-up" aria-hidden="true" style="color:green; font-size:16px; padding-left:3px"></i>
-                            @else
-                                <i class="fa fa-arrow-down" aria-hidden="true" style="color:red; font-size:16px; padding-left:3px"></i>
+                                @if ( $month_wise_revenue[$data->year][$data->month] > 0 ) 
+                                    <i class="fa fa-arrow-up" aria-hidden="true" style="color:green; font-size:16px; padding-left:3px"></i>
+                                @else
+                                    <i class="fa fa-arrow-down" aria-hidden="true" style="color:red; font-size:16px; padding-left:3px"></i>
+                                @endif
+                                
+                            @else   
+                                0 
                             @endif
-                            
-                        @else   
-                            0 
-                        @endif
+                        </th>
+
+
+                        <th class="text-right">
+                            @if ( array_key_exists($data->year, $month_wise_revenue) && array_key_exists($data->month, $month_wise_revenue[$data->year]) )
+
+                                {{  number_format( $month_wise_revenue[$data->year][$data->month] - $data->revenue ,2,'.',',') }}
+
+                                @if ( $month_wise_revenue[$data->year][$data->month] - $data->revenue > 0 ) 
+                                    <i class="fa fa-plus" aria-hidden="true" style="color:green; font-size:16px; padding-left:3px"></i>
+                                @else
+                                    <i class="fa fa-minus" aria-hidden="true" style="color:red; font-size:16px; padding-left:3px"></i>
+                                @endif 
+
+                            @endif
                         </th>
                         
                     </tr>
