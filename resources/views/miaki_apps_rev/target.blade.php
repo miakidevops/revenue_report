@@ -28,7 +28,8 @@
                     @php $ind = 0 @endphp
                     @foreach($all_data as $data)
                     <tr>
-                        <th class="text-center">{{$loop->iteration}}</th>
+                        <th class="text-center">{{ $loop->iteration }}</th>
+                        <th class="text-center">{{ $data->year }}</th>
                        
                         
                     </tr>
