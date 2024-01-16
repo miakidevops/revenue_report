@@ -29,9 +29,7 @@
                     @foreach($all_data as $data)
                     <tr>
                         <th class="text-center">{{$loop->iteration}}</th>
-                        <th class="text-center">{{$data->year}}</th>
-                        <th class="text-center">{{$month_name[$data->month]}}</th>
-                        <th class="text-right">{{  number_format( $data->revenue ,2,'.',',') }}</th>
+                       
                         
                     </tr>
                     @php $ind++ @endphp
